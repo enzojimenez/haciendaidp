@@ -59,7 +59,7 @@ class Token {
             $this->token_data = json_decode(file_get_contents($this->token_archivo),true);
             // Valida si el token aún es válido (dura 300 segundos)
             if (!$this->TokenValido()) {
-                // Valida si el refresh token aún es válido (dura 14400 segundos)
+                // Valida si el refresh token aún es válido (dura 3600 segundos)
                 if (!$this->RefreshValido()) {
                     // En caso de que todo este invalido se obtiene token nuevo
                     if($this->Crear($this->Obtener())) {
