@@ -1,10 +1,21 @@
 {
+  "name": "enzojimenez/haciendaidp",
+  "description": "Ministerio de Hacienda",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Enzo Jimenez"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.5.5",
+    "slim/slim": "3.9",
+    "ext-json": "*"
+  },
   "autoload": {
     "psr-4": {
       "App\\": "app"
     }
-  },
-  "require": {
-    "guzzlehttp/guzzle": "^6.3"
   }
 }
